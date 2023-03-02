@@ -1,0 +1,67 @@
+package br.com.alura;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class TestandoListas {
+
+	public static void main(String[] args) {
+		
+		String aula1 = "Conhecendo mais listas";
+		String aula2 = "Modelando a classe Aula";
+		String aula3 = "Trabalhando com cursos e sets";
+		
+		ArrayList<String> aulas = new ArrayList<>();
+		aulas.add(aula1);
+		aulas.add(aula2);
+		aulas.add(aula3);
+		
+		System.out.println(aulas);
+		
+		aulas.remove(0);
+		System.out.println(aulas);
+		
+		for (String aula : aulas) { //para cada aula, dentro da lista aulas... faça o seguinte:
+			System.out.println("Aula: " + aula);
+		}
+		
+		String primeiraAula = aulas.get(0);
+		System.out.println("A primeira aula é " + primeiraAula);
+		
+		for (int i = 0; i < aulas.size(); i++) {
+			System.out.println("aula: " + aulas.get(i));
+		}
+		
+		System.out.println(aulas.size());
+		
+		aulas.forEach(aula -> {
+			System.out.println("percorrendo: ");
+			System.out.println("aula " + aula);
+		});
+	
+		aulas.add("Aumentando nosso conhecimento");
+		
+		Collections.sort(aulas); //ordenando
+		System.out.println("Depois de ordenado: " + aulas);
+	}
+}
+
+class TestandoListas2 {
+	public static void main(String[] args) {
+		String curso1 = "Java";
+		String curso2 = "Orientação a Objetos com Java";
+		String curso3 = "Java Web";
+		
+		ArrayList<String> cursosAlura = new ArrayList<>();
+		cursosAlura.add(curso1);
+		cursosAlura.add(curso2);
+		cursosAlura.add(curso3);
+		
+		cursosAlura.forEach(cursos -> {
+			System.out.println("percorrendo");
+			System.out.println(cursos);
+		});
+		
+		
+	}
+}

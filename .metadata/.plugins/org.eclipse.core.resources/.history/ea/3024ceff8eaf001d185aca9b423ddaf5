@@ -1,0 +1,18 @@
+package br.com.alura.java8;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Formatter;
+
+public class FormatandoDatas {
+
+	public static void main(String[] args) {
+		
+		LocalDateTime agora = LocalDateTime.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/mm/yyyy");
+		System.out.println(formatter.format(agora));
+		
+		
+	}
+	
+}

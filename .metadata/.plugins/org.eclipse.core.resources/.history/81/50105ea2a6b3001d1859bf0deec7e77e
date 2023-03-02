@@ -1,0 +1,12 @@
+package calculadora;
+
+import java.util.Scanner;
+
+public class Calc {
+	
+	Scanner scan = new Scanner(System.in);
+	
+	Numero n1 = new Numero();
+	
+	
+}

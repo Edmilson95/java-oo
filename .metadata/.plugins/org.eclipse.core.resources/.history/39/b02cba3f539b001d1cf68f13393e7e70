@@ -1,0 +1,21 @@
+package br.com.bytebank.banco.test;
+
+public class TesteString {
+
+	public static void main(String[] args) {
+
+		String nome = "Alura";//object literal
+	//	String nome = new String("Alura");
+		
+//		String outro = nome.replace("a", "AA");//com aspas simples representar um 'char'	
+//			nome.toLowerCase();
+		
+		char c = nome.charAt(2);//descobrir qual a posicao do char que vc mandou pelo index
+		System.out.println(c);
+				
+		System.out.println(nome);
+
+		
+	}
+
+}

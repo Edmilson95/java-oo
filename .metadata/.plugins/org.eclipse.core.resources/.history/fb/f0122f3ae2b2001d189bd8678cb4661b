@@ -1,0 +1,42 @@
+package br.com.alura.java8;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Pessoa{
+	String nome;
+	int idade;
+	Pessoa(String nome, int idade){
+		this.nome = nome;
+		this.idade = idade;
+	}
+	
+	public String toString() {
+		return nome;
+	}
+}
+
+interface Matcher<T>{
+	boolean test(T t);
+}
+
+class FiltradorDePessoas{
+	
+	List<Pessoa> filtra(List<Pessoa> todas,
+			Matcher<Pessoa> matcher){
+		List<Pessoa> resultado = new ArrayList<>();
+		for (Pessoa p: todas) {
+			if(matcher.test(p))
+				resultado.add(p);
+		}
+		return resultado;
+	}
+	
+}
+
+
+
+
+public class Lambda {
+
+}

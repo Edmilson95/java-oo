@@ -1,0 +1,23 @@
+package br.com.alura.java8;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class DateTime1 {
+
+//		LocalDate = Data sem hora
+//		LocalTime = hora 
+//		LocalDateTime = data com hora
+//		MonthDay = Dia de um mes
+//		YearMonth = mes e ano
+	public static void main(String[] args) {
+
+		LocalDate d = LocalDate.now();
+		System.out.println(d);
+		LocalTime time = LocalTime.now();
+	}
+	
+		
+	
+	
+}
